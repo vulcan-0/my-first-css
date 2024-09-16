@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="next_sibling_selector3.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Next sibling selector - controlled with child combinator</h1>
+                <figure class="callout">
+                    <p>
+                        When we add a child combinator (<code>&gt;</code>), there's no issue with
+                        recursion, which removes unpredictable behaviour in child elements.
+                    </p>
+                </figure>
+                <div class="top box">
+                    <p>I have no margin because I am the first child.</p>
+                    <p>
+                        I have <code>margin-top</code> because I am a <strong>next sibling</strong>.
+                    </p>
+                    <p>
+                        I have a <strong>bold</strong> <em>then an emphasised bit of text</em>,
+                        which because I put <code>inline-block</code> on my emphasised text, which
+                        is fine because we have a <strong>child combinator</strong>.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

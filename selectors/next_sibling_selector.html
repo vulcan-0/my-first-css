@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="next_sibling_selector.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Next sibling selector</h1>
+                <figure class="callout">
+                    <p>
+                        The <strong>next sibling selector</strong> allows us to only add margin to
+                        siblings that follow each other.
+                    </p>
+                </figure>
+                <div class="top box">
+                    <p>I have no margin because I am the first child.</p>
+                    <p>
+                        I have <code>margin-top</code> because I am a <strong>next sibling</strong>.
+                    </p>
+                    <p>I am also a <strong>next sibling</strong>, so also get margin top.</p>
+                    <p>I am also a <strong>next sibling</strong>, so also get margin top.</p>
+                    <p>I am also a <strong>next sibling</strong>, so also get margin top.</p>
+                    <div>
+                        <p>test test test</p>
+                        <p>test test test</p>
+                        <p>test test test</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

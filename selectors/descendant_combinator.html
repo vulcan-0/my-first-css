@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="descendant_combinator.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Descendant combinator, recursive effect</h1>
+                <figure class="callout">
+                    <p>
+                        Because the descendant combinator is <strong>recursive</strong>, the padding
+                        added to each child element applies, resulting in a staggered effect.
+                    </p>
+                </figure>
+                <div class="top box">
+                    <div>
+                        <p>1 level deep</p>
+                        <div>
+                            <p>2 levels deep</p>
+                            <div>
+                                <p>3 levels deep</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>

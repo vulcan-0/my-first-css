@@ -1,0 +1,19 @@
+a[href$=".pdf"]::before {
+    background-image: url(../_resources/pdf.png);
+}
+
+a[href$=".jpg"]::before,
+a[href$=".png"]::before {
+    background-image: url(../_resources/image.png);
+}
+
+a::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    background-size: 100%;
+    margin-inline-end: 0.5em;
+    opacity: 0.8;
+}
