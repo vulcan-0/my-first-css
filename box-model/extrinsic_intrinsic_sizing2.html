@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="extrinsic_intrinsic_sizing2.css">
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <article class="flow">
+                <h1>Extrinsic sizing vs intrinsic sizing</h1>
+                <figure class="callout">
+                    <p>Toggle intrinsic sizing on and off to see how you can gain more control with <strong>extrinsic
+                            sizing</strong> and let the content have more control with <strong>intrinsic
+                            sizing</strong>.</p>
+                    <p>To see the effect that intrinsic and extrinsic sizing has, go ahead and add a few sentences of
+                        content to the card to see the vast differences in display.</p>
+                </figure>
+                <label class="toggle" for="intrinsic-switch">
+                    <span class="toggle__label">Turn on intrinsic sizing</span>
+                    <input type="checkbox" role="switch" class="toggle__element" id="intrinsic-switch" />
+                    <div class="toggle__decor" aria-hidden="true">
+                        <div class="toggle__thumb"></div>
+                    </div>
+                </label>
+                <div class="box-layout">
+                    <div class="dimension-label" aria-live="polite" aria-label="Current box width">
+                        <span data-element="width-label"></span>
+                    </div>
+                    <div></div>
+                    <figure class="box-demo box" data-element="parent-box">
+                        <figcaption contenteditable>
+                            <p>You can edit this text to see how it changes the layout of our box, depending on
+                                intrinsic and extrinsic sizing.</p>
+                            <p>Toggle intrinsic sizing on and off to see how extrinsic sizing gives you more control
+                                with extrinsic sizing and intrinsic sizing gives the content more control. To see the
+                                effects add a few sentences of text to the card. When this element has extrinsic sizing,
+                                there's a limit to how much content you can add before it overflows, but that doesn't
+                                happen when intrinsic sizing is toggled on.</p>
+                            <p>By default, this element has a set width and height of 400px each. These dimensions give
+                                strict bounds to everything inside the element, which are honored unless the content is
+                                too large for the box. You can see this in action by changing the caption under the
+                                flower picture to something that exceeds the height of the box.</p>
+                            <p>Key term: Overflow happens when content is too big for the box it's in. You can manage
+                                how an element handles overflow content using the overflow property.</p>
+                            <p>Switching to intrinsic sizing lets the browser make decisions for you based on the box's
+                                content size. This makes overflow much less likely because the box resizes with its
+                                content.</p>
+                            <p>It's important to remember that intrinsic sizing is the browser's default behavior, and
+                                it usually provides much more flexibility than extrinsic sizing.</p>
+                        </figcaption>
+                    </figure>
+                    <div class="dimension-label" aria-live="polite" aria-label="Current box height"
+                        data-orientation="vertical">
+                        <span data-element="height-label"></span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="extrinsic_intrinsic_sizing2.js"></script>
+</body>
+
+</html>
