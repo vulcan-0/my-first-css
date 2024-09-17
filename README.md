@@ -12,10 +12,16 @@
    - max-content
 
 2. areas
+
    - margin (contains outline & shadow)
    - border
    - padding (contains scrollbar)
    - content
+
+3. box-sizing
+
+   - border-box
+   - content-box
 
 ## Selectors
 
