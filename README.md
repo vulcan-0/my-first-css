@@ -50,3 +50,15 @@
 2. Origin: website > user (os, browser extension) > browser
 3. Specificity: inline > layer > id > class|attribute|pseudo-class > type|pseudo-element
 4. Position: n > ... > 1
+
+## Specificity
+
+[Specificity Calculator](https://specificity.keegan.st)
+[CSS Selector Specificity](https://polypane.app/css-specificity-calculator)
+
+1. !important rule (10000)
+2. Inline style attribute (1000)
+3. ID selector (100)
+4. Classes, attributes or pseudo-classes selector (10)
+5. Elements or pseudo-elements selector (1)
+6. Universal selector (0)
