@@ -62,3 +62,10 @@
 4. Classes, attributes or pseudo-classes selector (10)
 5. Elements or pseudo-elements selector (1)
 6. Universal selector (0)
+
+## Inheritance
+
+1. inherit
+2. initial
+3. unset
+4. revert
