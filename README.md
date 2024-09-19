@@ -69,3 +69,12 @@
 2. initial
 3. unset
 4. revert
+
+## Color
+
+1. Hex Colors: #000000，#00000080
+2. rgb: rgb(255, 255, 255)，rgb(100%, 100%, 100%)，rgb(0 0 0 / 50%)，rgb(0 0 0 / 0.5)
+3. rgba: rgba(0, 0, 0, 50%)，(0, 0, 0, 0.5)
+4. hsl: hsl(0 0% 0%)，hsl(0deg 0% 0%)，hsl(0turn 0% 0%)，hsl(0rad 0% 0%)，hsl(0 0% 0% / 50%)，hsl(0 0% 0% / 0.5)
+5. hsla: hsla(0, 0%, 0%, 50%)，hsla(0, 0%, 0%, 0.5)
+6. Color Keywords: purple，tomato，goldenrod
