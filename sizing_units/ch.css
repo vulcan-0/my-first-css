@@ -1,0 +1,25 @@
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    max-width: 15ch;
+}
+
+p {
+    font-size: 1.25rem;
+    max-width: 70ch;
+}
+
+/* Presentational styles */
+article {
+    width: 100%;
+}
+
+article>*+* {
+    margin-top: 1.25em;
+}
+
+/* Presentational styles */
+body {
+    font-family: sans-serif;
+    padding: 2em;
+}

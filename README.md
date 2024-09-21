@@ -78,3 +78,43 @@
 4. hsl: hsl(0 0% 0%)，hsl(0deg 0% 0%)，hsl(0turn 0% 0%)，hsl(0rad 0% 0%)，hsl(0 0% 0% / 50%)，hsl(0 0% 0% / 0.5)
 5. hsla: hsla(0, 0%, 0%, 50%)，hsla(0, 0%, 0%, 0.5)
 6. Color Keywords: purple，tomato，goldenrod
+
+## Sizing Units
+
+1. Numbers
+
+   - line-height: 1.5 `字体高度的1.5倍`
+   - filter: sepia(0.5) `将图像转为棕褐色，50%`
+   - opacity: 0.5 `不透明度50%`
+   - rgb(50, 50, 50)
+   - transform: scale(1.2) `缩放1.2倍`
+
+2. Percentages
+3. Dimensions and lengths
+
+   - Absolute lengths (以下是在 96dpi 情况下的换算，dpi：每英寸像素点数，96dpi 即每英寸 96 像素点。一般显示器为 96dpi。)
+
+     - cm: 1cm = 96px/2.54 `厘米`
+     - mm: 1mm = 1/10th of 1cm `毫米`
+     - Q: 1Q = 1/40th of 1cm `1/4毫米`
+     - in: 1in = 2.54cm = 96px `英寸`
+     - pc: 1pc = 1/6th of 1in
+     - pt: 1pt = 1/72th of 1in
+     - px: 1px = 1/96th of 1in `像素`
+
+   - Relative lengths
+
+     - Font-size-relative units
+
+       - em: `相对于父级字体大小的倍数，1.5em表示相对于父级字体的1.5倍`
+       - rem: `相对于根元素字体大小的倍数`
+       - ch: `1字符长度`
+       - ex、cap、ic、lh、rlh
+
+     - Viewport-relative units (相对于 viewport 的大小，width: 10vw 表示 10% viewport 的宽度)
+
+       - vw、vh、vi、vb、vmin、vmax
+
+4. Miscellaneous units
+
+   - Angle units
