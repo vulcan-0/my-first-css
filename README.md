@@ -127,8 +127,79 @@
    - block
    - inline-block
    - float
-   - position: relative，absolute
+   - position: relative，absolute，fixed
    - Multicolumn layout: column-count，column-gap
 
 2. Flexbox
 3. Grid
+
+## Flexbox
+
+1. display: flex
+2. flex-direction: row，row-reverse，column，column-reverse
+3. flex-wrap: wrap，nowrap
+4. flex-flow: column wrap `flex-direction: column & flex-wrap: wrap`
+5. direction: rtl
+6. writing-mode: rl
+7. flex-grow: 0 `0 can't grow，1 can grow`
+8. flex-shrink: 1 `0 can't shrink，1 can shrink`
+9. flex-basis: auto `auto，0`
+10. flex
+
+    - initial `flex: initial`
+
+      - flex-grow: 0
+      - flex-shrink: 1
+      - flex-basis: auto
+
+    - auto `flex: auto`
+
+      - flex-grow: 1
+      - flex-shrink: 1
+      - flex-basis: auto
+
+    - 1 `flex: 1`
+
+      - flex-grow: 1
+      - flex-shrink: 1
+      - flex-basis: 0
+
+    - flex: 1，flex: 2，flex: 3 `用在不同item中`
+    - flex: 1 1 auto `flex-grow: 1，flex-shrink: 1，flex-basis: auto`
+
+11. order
+12. justify-content: flex-start，flex-end，center，space-around，space-between，space-evenly
+13. align-content: stretch，flex-start，flex-end，center，space-around，space-between，space-evenly
+14. place-content
+
+    - place-content: space-between `sets both (justify-content & align-content) to space-between`
+    - place-content: center flex-end `justify-content: center & align-content: flex-end`
+
+15. align-self: flex-start，flex-end，center，stretch，baseline
+16. align-items: stretch，flex-start，flex-end，center
+
+```css
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  direction: rtl;
+  writing-mode: rl;
+  justify-content: center;
+  align-content: center;
+  place-content: center;
+}
+
+.child {
+  flex: initial;
+  flex: 1;
+  flex: 1 1 auto;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  order: 1;
+  align-self: flex-start;
+  align-items: flex-start;
+}
+```
