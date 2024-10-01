@@ -203,3 +203,111 @@
   align-items: flex-start;
 }
 ```
+
+## Grid
+
+1. display: grid
+2. grid-template-columns: 5em 100px 30%
+3. grid-template-rows: 200px auto
+4. gap: 10px
+5. grid-template-columns: repeat(3, min-content)
+
+   - min-content
+   - max-content
+   - fit-content(10em)
+
+6. grid-template-columns: 1fr 1fr 1fr
+7. grid-template-columns: repeat(12, minmax(0, 1fr))
+8. grid-template-columns: repeat(auto-fill, 200px)
+
+   - auto-fill
+   - auto-fit
+
+9. grid-auto-flow
+
+   - row，row dense
+   - column，column dense
+
+10. writing-mode
+
+    - horizontal-tb
+    - vertical-rl
+    - vertical-lr
+
+11. grid-row: auto / span 2，grid-column: auto / span 2
+12. Placing items
+
+    - grid-column-start
+    - grid-column-end
+    - grid-row-start
+    - grid-row-end
+    - grid-column
+    - grid-row
+
+13. Negative line numbers
+
+    - grid-row: 1 / -1
+
+14. grid-auto-rows: minmax(10em, auto)
+15. grid-auto-columns: 100px 200px
+16. grid-template-areas:\
+     "header header header header"\
+     "sidebar content content content"\
+     "sidebar footer footer footer"
+
+    - grid-area: header
+    - grid-area: sidebar
+    - grid-area: content
+    - grid-area: footer
+
+17. grid-template:\
+     "head head head" minmax(150px, auto)\
+     "sidebar content content" auto\
+     "sidebar footer footer" auto / 1fr 1fr 1fr
+
+18. Alignment
+
+    - justify-content and align-content:
+    - justify-self and align-self
+    - justify-items and align-items
+
+```css
+.parent {
+  display: grid;
+  grid-template-columns: 5em 100px 30%;
+  grid-template-rows: 200px auto;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-auto-rows: minmax(10em, auto);
+  grid-auto-columns: 100px 200px;
+  grid-template-columns:
+    [main-start aside-start] 1fr
+    [aside-end content-start] 2fr
+    [content-end main-end];
+  grid-template-areas:
+    "header header header header"
+    "sidebar content content content"
+    "sidebar footer footer footer";
+  grid-template:
+    "head head head" minmax(150px, auto)
+    "sidebar content content" auto
+    "sidebar footer footer" auto / 1fr 1fr 1fr;
+  grid: repeat(2, 80px) / auto-flow 120px;
+  writing-mode: rl;
+  justify-content: center;
+  align-content: center;
+}
+
+.child {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  grid-column: aside-start / aside-end;
+  grid-area: header;
+  align-self: flex-start;
+  align-items: flex-start;
+}
+```
