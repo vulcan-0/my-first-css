@@ -177,6 +177,7 @@
 
 15. align-self: flex-start，flex-end，center，stretch，baseline
 16. align-items: stretch，flex-start，flex-end，center
+17. margin-inline-start
 
 ```css
 .parent {
@@ -189,6 +190,7 @@
   justify-content: center;
   align-content: center;
   place-content: center;
+  margin-inline-start: auto;
 }
 
 .child {
@@ -267,7 +269,7 @@
 
 18. Alignment
 
-    - justify-content and align-content:
+    - justify-content and align-content
     - justify-self and align-self
     - justify-items and align-items
 
@@ -311,3 +313,111 @@
   align-items: flex-start;
 }
 ```
+
+## Logical Properties
+
+1. Block flow
+
+   - block start
+   - block end
+   - block size
+
+2. Inline flow
+
+   - inline start
+   - inline end
+   - inline size
+
+3. Sizing
+
+```css
+.my-element {
+  max-width: 150px;
+  max-height: 100px;
+}
+```
+
+equivalents:
+
+```css
+.my-element {
+  max-inline-size: 150px;
+  max-block-size: 100px;
+}
+```
+
+4. Start and end
+
+```css
+p {
+  text-align: right;
+}
+```
+
+equivalents:
+
+```css
+p {
+  text-align: end;
+}
+```
+
+5. Spacing and positioning
+
+```css
+.my-element {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: 2em;
+  position: relative;
+  top: 0.2em;
+}
+```
+
+equivalents:
+
+```css
+.my-element {
+  padding-block-start: 2em;
+  padding-block-end: 2em;
+  margin-inline-start: 2em;
+  position: relative;
+  inset-block-start: 0.2em;
+}
+```
+
+equivalents:
+
+```css
+.my-element {
+  padding-block: 2em;
+  margin-inline: 2em 0;
+  position: relative;
+  inset-block: 0.2em 0;
+}
+```
+
+6. Borders
+
+```css
+.my-element {
+  border-bottom: 1px solid red;
+  border-right: 1px solid red;
+  border-bottom-right-radius: 1em;
+}
+```
+
+equivalents:
+
+```css
+.my-element {
+  border-block-end: 1px solid red;
+  border-inline-end: 1px solid red;
+  border-end-end-radius: 1em;
+}
+```
+
+7. Units
+
+   - vi `1% vw`
+   - vb `1% wh`
