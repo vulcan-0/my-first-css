@@ -126,8 +126,13 @@
    - inline
    - block
    - inline-block
-   - float
+   - float `相对于父级元素`
    - position: relative，absolute，fixed
+
+     - relative `相对于兄弟元素`
+     - absolute `相对于 position 是 relative 的父级元素；如果直属父级元素不是 relative 的，则一直往上找，直到找到第一个是 relative 的；或者找到根元素，就跟 fixed 一样`
+     - fixed `相对于根元素`
+
    - Multicolumn layout: column-count，column-gap
 
 2. Flexbox
@@ -421,3 +426,65 @@ equivalents:
 
    - vi `1% vw`
    - vb `1% wh`
+
+## Spacing
+
+1. HTML spacing
+
+   - `<br>`
+   - `<hr>`
+
+2. Margin
+
+   - Margin shorthand
+
+     - margin: 20px `上下左右：20px`
+     - margin: 20px 40px `上下：20px，左右：40px`
+     - margin: 20px 40px 30px `上：20px，左右：40px，下：30px`
+
+   - Percentages with margin
+
+     - margin: 20% `相对于父级元素的 20%`
+
+   - Auto margins
+
+     - margin-inline-start: auto `start 方向的全部可用空间设为 margin`
+     - margin: 0 auto `左右方向的全部可用空间设为 margin，可达到元素居中的效果`
+
+   - Negative margin
+   - Margin collapse
+
+下面的 margin，会折叠成 3rem。
+
+```html
+<article>
+  <h1>My heading with teal margin</h1>
+  <p>
+    A paragraph of text that has blue margin on it, following the heading with
+    margin.
+  </p>
+</article>
+```
+
+```css
+h1 {
+  margin-bottom: 2rem;
+}
+
+p {
+  margin-top: 3rem;
+}
+```
+
+- Preventing margin collapse
+
+  - position、float
+  - flexbox、grid
+
+3. Padding
+4. Positioning
+5. Grid and flexbox
+
+   - gap
+   - row-gap
+   - column-gap
