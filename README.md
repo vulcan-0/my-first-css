@@ -429,6 +429,8 @@ equivalents:
 
 ## Spacing
 
+[Everything You Need To Know About CSS Margins](https://www.smashingmagazine.com/2019/07/margins-in-css/)
+
 1. HTML spacing
 
    - `<br>`
@@ -488,3 +490,14 @@ p {
    - gap
    - row-gap
    - column-gap
+
+## Pseudo-elements
+
+1. ::before and ::after
+2. ::first-letter
+3. ::first-line
+4. ::backdrop
+5. ::marker
+6. ::selection
+7. ::placeholder
+8. ::cue
