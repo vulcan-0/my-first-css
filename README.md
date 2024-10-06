@@ -550,3 +550,47 @@ p {
 
    - :is()
    - :not()
+
+## Borders
+
+1. Border properties
+
+   - border-width `thin，medium，thick，px, em, rem or %。默认：medium`
+   - border-style `none，hidden，dotted，dashed，solid，double，groove，ridge，inset，outset`
+   - border-color `默认使用：currentColor`
+   - Shorthand `border: 1px solid red;`
+
+2. Logical properties
+
+   - border-block `top，bottom`
+   - border-inline `left，right`
+
+3. Border radius
+
+   - border-radius: 1em
+   - border-radius: 1em 2em 3em 4em
+   - border-radius: 95px 155px 148px 103px / 48px 95px 130px 203px
+   - border-top-left-radius: 1em 2em
+
+4. Border images
+
+   - border-image-source
+
+     - url('path/to/image.png')
+     - linear-gradient(to bottom, #000, #fff) `线性渐变`
+
+   - border-image-slice
+
+     - border-image-slice: 61 58 51 48 `上右下左方向的切线位置，切成九宫格`
+     - border-image-slice: 30
+     - border-image-slice: 30 fill `fill 代表中间的填充`
+
+   - border-image-repeat
+
+     - stretch `拉伸填充`
+     - repeat `重复填充`
+     - round `重复填充+拉伸调整`
+     - space `重复填充+间隙调整`
+
+   - border-image-width
+   - border-image-outset `border-image 与 border 之间的间隙`
