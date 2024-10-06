@@ -501,3 +501,52 @@ p {
 6. ::selection
 7. ::placeholder
 8. ::cue
+
+## Pseudo-classes
+
+[CSS TRICKS :nth Tester](https://css-tricks.com/examples/nth-child-tester/)
+[Quantity Queries Builder](https://quantityqueries.com/)
+
+1. Interactive states
+
+   - :hover
+   - :active
+   - :focus, :focus-within, and :focus-visible
+   - :target
+
+2. Historic states
+
+   - :link
+   - :visited
+
+3. Form states
+
+   - :disabled and :enabled
+   - :checked and :indeterminate
+   - :placeholder-shown
+   - Validation states
+
+     - :valid and :invalid
+     - :in-range
+
+4. Selecting elements by their index, order and occurrence
+
+   - :first-child and :last-child
+   - :only-child
+   - :first-of-type and :last-of-type
+   - :nth-child and :nth-of-type
+
+     - :nth-child(2)
+     - :nth-child(even)
+     - :nth-child(3n+3)
+
+   - :only-of-type
+
+5. Finding empty elements
+
+   - :empty
+
+6. Finding and excluding multiple elements
+
+   - :is()
+   - :not()
