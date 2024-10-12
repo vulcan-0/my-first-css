@@ -594,3 +594,24 @@ p {
 
    - border-image-width
    - border-image-outset `border-image 与 border 之间的间隙`
+
+## Shadows
+
+1. Box shadow
+
+   - box-shadow: 5px 5px 20px 5px #000 `Horizontal offset，Vertical offset，Blur radius，Spread radius，Color`
+   - box-shadow: inset 5px 5px 20px 5px #000
+   - box-shadow: 5px 5px 20px 5px darkslateblue, -5px -5px 20px 5px dodgerblue, inset 0px 0px 10px 2px darkslategray, inset 0px 0px 20px 10px steelblue
+   - `会受 border-radius 和 overflow: hidden 的影响`
+
+2. Text shadow
+
+   - text-shadow: 3px 3px 3px hotpink
+   - text-shadow: 1px 1px 0px white, 2px 2px 0px firebrick
+   - `没有 spread 和 inset，透明字也会有阴影`
+
+3. Drop shadow
+
+   - filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 30%))
+   - filter: drop-shadow(0px 0px 10px hotpink) drop-shadow(10px 10px 20px rgba(0 0 0 / 30%))
+   - `没有 spread 和 inset，应用于图片`
