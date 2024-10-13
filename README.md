@@ -615,3 +615,20 @@ p {
    - filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 30%))
    - filter: drop-shadow(0px 0px 10px hotpink) drop-shadow(10px 10px 20px rgba(0 0 0 / 30%))
    - `没有 spread 和 inset，应用于图片`
+
+## Focus
+
+1. tabindex `负数，0，正数`
+2. focus
+
+```css
+a:focus {
+  outline: 2px solid slateblue;
+  outline-offset: 6px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 3px #192a56;
+}
+```
