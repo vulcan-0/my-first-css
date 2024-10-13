@@ -632,3 +632,7 @@ button:focus {
   box-shadow: 0px 0px 0px 3px #192a56;
 }
 ```
+
+## Z-index and stacking contexts
+
+[层叠上下文](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context)
