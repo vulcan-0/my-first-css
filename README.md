@@ -636,3 +636,90 @@ button:focus {
 ## Z-index and stacking contexts
 
 [层叠上下文](https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_positioned_layout/Understanding_z-index/Stacking_context)
+
+## Functions
+
+1. Functional selectors
+
+```css
+.post :is(h1, h2, h3) {
+    line-height: 1.2;
+}
+```
+
+2. Custom properties and var()
+
+```css
+:root {
+    --base-color: #ff00ff;
+}
+
+.my-element {
+    background: var(--base-color, hotpink);
+}
+```
+
+3. Functions that return a value
+
+- ttr(), url() 
+
+4. Color functions
+
+- rgb(), rgba(), hsl(), hsla(), hwb(), lab() and lch()
+
+5. Mathematical expressions
+
+- calc()
+
+```css
+.my-element {
+    width: calc(100% - 2rem);
+}
+```
+
+- min() and max()
+
+```css
+.my-element {
+  width: min(20vw, 30rem);
+  height: max(20vh, 20rem);
+}
+```
+
+- clamp(), The clamp() function takes three arguments: the minimum size, the ideal size and the maximum.
+
+```css
+h1 {
+  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+}
+```
+
+6. Shapes
+
+- circle(), ellipse(), inset() and polygon()
+
+```css
+.circle {
+  clip-path: circle(50%);
+}
+
+.polygon {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
+```
+
+7. Transforms
+
+- rotate(), rotateX(), rotateY(), rotateZ() and rotate3d() `旋转`
+- scale(), scaleX(), scaleY(), scaleZ() and scale3d() `缩放`
+- translate(), translateX(), translateY(), translateZ() and translate3d() `平移`
+- skew(), skewX(), skewY() `倾斜`
+- perspective `透视`
+
+```css
+.my-element {
+  transform: rotateX(10deg) rotateY(10deg) rotateZ(10deg);
+}
+```
+
+8. Animation functions, gradients and filters
