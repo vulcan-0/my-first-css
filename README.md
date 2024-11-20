@@ -26,6 +26,7 @@
 ## Selectors
 
 [CSS Diner](https://flukeout.github.io/)
+
 [Selectors Explained](https://kittygiraudel.github.io/selectors-explained)
 
 1. Universal selector (\*)
@@ -54,6 +55,7 @@
 ## Specificity
 
 [Specificity Calculator](https://specificity.keegan.st)
+
 [CSS Selector Specificity](https://polypane.app/css-specificity-calculator)
 
 1. !important rule (10000)
@@ -505,6 +507,7 @@ p {
 ## Pseudo-classes
 
 [CSS TRICKS :nth Tester](https://css-tricks.com/examples/nth-child-tester/)
+
 [Quantity Queries Builder](https://quantityqueries.com/)
 
 1. Interactive states
@@ -643,7 +646,7 @@ button:focus {
 
 ```css
 .post :is(h1, h2, h3) {
-    line-height: 1.2;
+	line-height: 1.2;
 }
 ```
 
@@ -651,11 +654,11 @@ button:focus {
 
 ```css
 :root {
-    --base-color: #ff00ff;
+	--base-color: #ff00ff;
 }
 
 .my-element {
-    background: var(--base-color, hotpink);
+	background: var(--base-color, hotpink);
 }
 ```
 
@@ -673,7 +676,7 @@ button:focus {
 
 ```css
 .my-element {
-    width: calc(100% - 2rem);
+	width: calc(100% - 2rem);
 }
 ```
 
@@ -723,3 +726,78 @@ h1 {
 ```
 
 8. Animation functions, gradients and filters
+
+## Gradients
+
+[conic.css](https://www.conic.style/)
+
+[Ultimate CSS Gradient Generator](https://www.colorzilla.com/gradient-editor/)
+
+1. Linear gradient
+
+```css
+.my-element {
+  background: linear-gradient(black, white);
+}
+
+.my-element {
+  background: linear-gradient(to right, black, white);
+}
+
+.my-element {
+  background: linear-gradient(45deg, darkred 30%, crimson);
+}
+
+.my-element {
+  background: linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
+}
+```
+
+2. Radial gradient
+
+```css
+.my-element {
+  background: radial-gradient(white, black);
+}
+
+.my-element {
+  background: radial-gradient(closest-side, darkorange 50%, gold, bisque, darkred 20%, crimson);
+}
+```
+
+3. Conic gradient
+
+```css
+.my-element {
+  background: conic-gradient(white, black);
+}
+
+.my-element {
+  background: conic-gradient(from 10deg at 20% 30%, white, black);
+}
+
+.my-element {
+  background: conic-gradient(
+     gold 20deg, lightcoral 20deg 190deg, mediumturquoise 190deg 220deg, plum 220deg 320deg, steelblue 320deg);
+  border-radius: 50%;
+  border: 10px solid;
+}
+```
+
+4. Repeating and mixing
+
+```css
+.my-element {
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 30px,
+    white 30px,
+    white 60px
+  );
+}
+
+.my-element {
+  background: linear-gradient(-45deg, blue -30%, transparent 80%), linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
+}
+```
