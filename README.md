@@ -801,3 +801,117 @@ h1 {
   background: linear-gradient(-45deg, blue -30%, transparent 80%), linear-gradient(45deg, darkred 20%, crimson, darkorange 60%, gold, bisque);
 }
 ```
+
+## Animations
+
+1. @keyframes
+
+```css
+@keyframes my-animation {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes my-animation {
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+```
+
+2. animation-duration
+
+```css
+.my-element {
+  animation-duration: 10s;
+}
+```
+
+3. animation-timing-function: linear, ease, ease-in, ease-out, ease-in-out
+
+- [cubic-bezier](https://cubic-bezier.com/)
+
+```css
+.my-element {
+  animation-timing-function: ease-in-out;
+}
+
+.my-element {
+  animation-timing-function: cubic-bezier(.42, 0, .58, 1);
+}
+
+.my-element {
+  animation-timing-function: steps(10, end);
+}
+```
+
+1. animation-iteration-count
+
+- infinite: `无限循环`
+
+```css
+.my-element {
+  animation-iteration-count: 10;
+}
+
+.my-element {
+  animation-iteration-count: infinite;
+}
+```
+
+1. animation-direction: normal, reverse, alternate, alternate-reverse
+
+```css
+.my-element {
+  animation-direction: reverse;
+}
+```
+
+6. animation-delay
+
+```css
+.my-element {
+  animation-delay: 5s;
+}
+```
+
+7. animation-play-state: running, paused
+
+```css
+.my-element:hover {
+  animation-play-state: paused;
+}
+```
+
+8. animation-fill-mode: forwards, backwards, both
+
+```css
+.my-element:hover {
+  animation-fill-mode: forwards;
+}
+```
+
+9. The animation shorthand
+
+- order
+  - animation-name
+  - animation-duration
+  - animation-timing-function
+  - animation-delay
+  - animation-iteration-count
+  - animation-direction
+  - animation-fill-mode
+  - animation-play-state
+
+```css
+.my-element {
+  animation: my-animation 10s ease-in-out 1s infinite reverse forwards running;
+}
+```
